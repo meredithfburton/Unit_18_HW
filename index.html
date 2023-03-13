@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Homework 17 Solved</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Meredith's Portfolio</title>
   </head>
   <body>
     <header>
@@ -16,10 +19,69 @@
     </header>
     <section class="heroImg">
       <div class="content">
-        <img src="images/placeholder_picture.png">
-        <h1>Your Name</h1>
-        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.</p>
+        <img src="images/Me.jpg" alt="pic of Meredith smirking" height="300px">
+        <h1>Hi, I'm Meredith</h1>
+        <p>A true right-brainer, I am a multi-disciplinary designer focused on UX/UI design. I am happiest when
+          creating, I live for the editorial and iteration processes, and I work hard to make the world a more
+          inclusive and accessible place.</p>
         <button>Download Resume</button>
+      </div>
+    
+    </section>
+
+<!--  My Work section coded using CSS flex -->
+    <section class="myWork">
+      <h1>My Work</h1>
+
+    <div class="workGrid"> 
+      <div class="workImg1">
+        <img src="images/paws.png" alt="Work Image 1">
+      </div>
+      <div class="workText1">
+        <h4>Case Study 01</h4>
+        <p>PAWS Website Redesign</p>
+        <button>View Case Study</button>
+        </div>
+      <div class="workText2">
+      <h4>Case Study 02</h4>
+      <p>Department of Interior Website Redesign</p>
+      <button>View Case Study</button>
+      </div>
+      <div class="workImg2">
+        <img src="images/doi.png" alt="Work Image 2">
+      </div>
+      <div class="workImg3">
+        <img src="images/stockpot.png" alt="Work Image 3">
+      </div>
+      <div class="workText3">
+      <h4>Case Study 03</h4>
+      <p>Stock Pot App Prototype</p>
+      <button>View Case Study</button>
+      </div>
+    <h3>View All Projects</h3>
+    </section>
+
+<!--  My UX Skills section coded using CSS flex -->
+    <section class="mySkills">
+      <h1>My UX Skills</h1>
+      <div class="flexContainer">
+        <div class="flexChild">
+          <img src="images/placeholder_pic.png" alt="pic of User Research" height="200px">
+        <h3>User Research</h3>
+        <p>I understand and empathize with user behaviors, needs, 
+          and motivations through user interviews, surveys, usability evaluations</p>
+        </div>
+        <div class="flexChild">
+          <img src="images/placeholder_pic.png" alt="pic of card sorting" height="200px">
+        <h3>Information Architecture</h3>
+        <p>I use card sorting and site mapping to simplify and map the information users need to access.</p>
+        </div>
+        <div class="flexChild">
+          <img src="images/placeholder_pic.png" alt="pic of UI Design" height="200px">
+        <h3>UI Design</h3>
+        <p>As a UI designer, I am all about creating intuitive, aesthetically-pleasing, interactive interfaces.</p>
+        </div>
+
       </div>
     </section>
     <footer>

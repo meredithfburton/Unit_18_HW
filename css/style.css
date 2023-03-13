@@ -1,13 +1,14 @@
 body {
   margin: 0;
+  font-family: 'outfit', sans-serif;
 }
 header {
-  background-color: cornflowerblue;
+  background-color: white;
   padding: 15px;
 }
 header ul {
   float: right;
-  color: white;
+  color: black;
 }
 header li {
   display: inline-block;
@@ -17,7 +18,7 @@ header p {
   display: inline-block;
 }
 .heroImg {
-  background-color: #EBEBEB;
+  background-color: #AAD9EE;
   padding: 100px 15px;
 }
 .content {
@@ -25,7 +26,6 @@ header p {
   margin: 0 auto;
   padding: 50px;
   background-color: #FFFFFF;
-  text-align: center;
 }
 button {
   padding: 15px;
@@ -34,6 +34,81 @@ button {
   font-size: 15px;
   border-radius: 4px;
 }
+
+/*--  My Work section coded using CSS flex */
+.myWork{
+  padding: 60px 30px;
+  padding-top: 0;
+}
+.workGrid{
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+  "toppicture topcontent"
+  "middlecontent middlepicture"
+  "bottompicture bottomcontent";
+}
+
+.workGrid Img {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: block;
+}
+
+.workGrid Text {
+display: flex;
+align-items: center;
+}
+
+.workImg1{
+grid-area: toppicture;
+}
+
+.workText1{
+  grid-area: topcontent;
+}
+
+.workImg2{
+grid-area: middlepicture;
+}  
+
+.workText2{
+grid-area: middlecontent;
+text-align: right;
+}
+
+.workImg3{
+grid-area: bottompicture;
+}
+        
+.workText3{
+grid-area: bottomcontent;
+}
+
+.workImg1, .workImg2, .workImg3, .workText1, .workText2, .workText3 {
+  padding: 80px
+}
+
+/*--  My UX Skills section coded using CSS flex */
+.mySkills{
+  padding: 60px 30px;
+  padding-top: 0;
+}
+
+.flexContainer{
+  display:flex;
+  flex-direction:row;
+}
+
+.flexChild{
+  background-color: #AAD9EE;
+  width: 33%;
+  padding:50px;
+  margin: 10px;
+}
+
 footer {
   background-color: #373738;
   padding: 5px;
@@ -46,4 +121,29 @@ footer ul {
 footer li {
   display: inline-block;
   padding: 0px 7px;
+  font-family: 'outfit', sans-serif;
+}
+
+@media all and (max-width:700px) {
+  .flexContainer{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .flexChild{
+    width: 100%;
+  }
+
+  .workGrid{
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "toppicture"
+      "topcontent"
+      "middlepicture"
+      "middlecontent"
+      "bottompicture"
+      "bottomcontent"
+    ;
+  }
 }
